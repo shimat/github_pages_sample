@@ -28,7 +28,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: my_site
-          path: data
+          path: ${{ github.workspace }}/data
           
       - uses: actions/deploy-pages@v1
         id: deployment
